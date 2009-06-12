@@ -1,0 +1,45 @@
+
+\usepackage{graphicx}
+
+\useinnertheme{rounded}
+
+\usefonttheme[stillsansseriflarge]{serif}
+% \usefonttheme{structureitalicserif}
+% \usefonttheme{structuresmallcapsserif}
+
+% \setbeamersize{text margin left=1cm, text margin right=1cm}
+
+% \newif\ifbeamer@footauthor
+% \newif\ifbeamer@foottitle
+% \newif\ifbeamer@footnumber
+% \DeclareOptionBeamer{footauthor}{\beamer@footauthortrue}
+% \DeclareOptionBeamer{foottitle}{\beamer@foottitletrue}
+% \DeclareOptionBeamer{footnumber}{\beamer@footnumbertrue}
+% \ProcessOptionsBeamer
+
+% fonts
+\setbeamerfont{title}{size=\Large,shape=\scshape}
+% \setbeamerfont{subtitle}{size=\Large}
+% \setbeamerfont{author}{size=\large}
+% \setbeamerfont{institute}{size=\normalsize}
+\setbeamerfont{frametitle}{shape=\itshape,family=\rmfamily}
+
+% \setbeamercolor{title}{fg=blue!50!black}
+% \setbeamercolor{normal text}{fg=black}
+% \setbeamercolor{frametitle}{fg=black}
+% \setbeamercolor{structure}{fg=black}
+% \setbeamercolor{math text}{fg=black}
+% \setbeamercolor{separation line}{fg=blue}
+
+% templates
+% \setbeamertemplate{items}[circle]
+% \setbeamertemplate{enumerate items}[default]
+
+\setbeamertemplate{background canvas}
+{\includegraphics[width=\paperwidth]{debian-moreblue-light.eps}}
+\setbeamertemplate{frametitle}{
+  \begin{center}
+    \underline{\insertframetitle} \par {\normalsize \insertframesubtitle}
+  \end{center}
+}
+\setbeamercolor{footline}{fg=white}
